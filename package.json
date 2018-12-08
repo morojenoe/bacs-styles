@@ -1,0 +1,19 @@
+{
+  "name": "bacs-styles",
+  "version": "1.0.0",
+  "description": "styles for bacs.cs.istu.ru",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morojenoe/bacs-styles.git"
+  },
+  "author": "Dmitry Sutygin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morojenoe/bacs-styles/issues"
+  },
+  "homepage": "https://github.com/morojenoe/bacs-styles#readme"
+}
