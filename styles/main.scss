@@ -1,39 +1,24 @@
 @import 'variables';
 @import 'mixins';
+@import 'nav/mixins';
 @import '../node_modules/foundation-sites/scss/foundation.scss';
+@import './nav/styles';
+@import './leaderboard/styles';
 
 body {
   background: $bg-color-nav;
 }
 
-@include nav-icons {
-  display: none;
-  width: 0;
-  height: 0;
-}
-
-@include nav-header {
-  background: none;
-  text-align: left;
-  padding: 10px;
-  @include separator();
-}
-
-@include nav-elem-link {
-  @include button-expand(true);
-  @include button-style($bg-color-nav, auto, auto);
-  padding: 10px 0 10px 0px;
-  text-decoration: none;
-}
-
-@include nav-elem {
-  display: flex;
-}
-
-@include nav-content-separator {
-  display: none;
+table {
+  border-collapse: collapse;
 }
 
 @include post {
-  @include shadow(10);
+  @include shadow;
+  background: none !important;
+  border: none !important;
+}
+
+@include post-table {
+  @include table(none, true);
 }
