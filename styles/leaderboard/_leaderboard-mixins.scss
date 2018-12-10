@@ -1,0 +1,12 @@
+@mixin leaderboard {
+  table:nth-child(1) tbody:nth-child(1) tr:nth-child(2) td:nth-child(1) > table:nth-child(7) {
+    @content;
+  }
+}
+
+@mixin problem-letter {
+  td:nth-child(1) table:nth-child(7) tbody:nth-child(1) tr:nth-child(1) > 
+      td:nth-child(n+3):not(:nth-last-child(1)):not(:nth-last-child(2)):not(:nth-last-child(3)) > a {
+    @content;
+  }
+}
