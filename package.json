@@ -4,7 +4,9 @@
   "description": "styles for bacs.cs.istu.ru",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build:scss": "./node_modules/.bin/sass ./styles/main.scss:./dist/main.css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,17 @@
   "bugs": {
     "url": "https://github.com/morojenoe/bacs-styles/issues"
   },
-  "homepage": "https://github.com/morojenoe/bacs-styles#readme"
+  "homepage": "https://github.com/morojenoe/bacs-styles#readme",
+  "dependencies": {
+    "bourbon": "^5.1.0",
+    "foundation-sites": "^6.5.1",
+    "muicss": "^0.9.41",
+    "sass": "^1.15.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
 }

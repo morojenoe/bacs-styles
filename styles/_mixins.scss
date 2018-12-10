@@ -1,0 +1,43 @@
+@mixin nav-header() {
+  td:nth-child(1) table:nth-child(5) tbody:nth-child(1) tr > td.hh {
+    @content;
+  }  
+}
+
+@mixin nav-elem-row() {
+  td:nth-child(1) table:nth-child(5) tbody:nth-child(1) tr:not(td.hh) {
+    @content;
+  }  
+}
+
+
+@mixin nav-elem() {
+  td:nth-child(1) table:nth-child(5) tbody:nth-child(1) tr > td:not(.hh) {
+    @content;
+  }  
+}
+
+@mixin nav-elem-link() {
+  td:nth-child(1) table:nth-child(5) tbody:nth-child(1) tr > td:not(.hh) > a {
+    @content;
+  }  
+}
+
+
+@mixin nav-icons {
+  table:nth-child(5) tbody:nth-child(1) tr td:nth-child(1) > img:not([src="/static/img/bacs2.gif"]) {
+    @content;
+  }
+}
+
+@mixin nav-content-separator {
+  td:nth-child(2) table:nth-child(1) tbody:nth-child(1) tr:nth-child(1) > td:nth-child(1) {
+    @content;
+  }
+}
+
+@mixin post {
+  table:nth-child(2) tbody:nth-child(1) tr:nth-child(2) td:nth-child(1) > table:nth-child(1) {
+    @content;
+  }
+}
