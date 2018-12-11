@@ -3,6 +3,9 @@
 @import '../node_modules/foundation-sites/scss/foundation.scss';
 @import './nav/nav-styles';
 @import './leaderboard/leaderboard-styles';
+@import '../node_modules/@angular/material/theming';
+
+$config: mat-typography-config();
 
 body {
   background: $bg-color-nav;
@@ -21,3 +24,15 @@ table {
 @include post-table {
   @include table(none, true);
 }
+
+@include contest-problems {
+  @include table(odd, true);
+  @include shadow;
+}
+
+@include content-title {
+  background-color: color-luminance($bg-color-nav);
+  border: none;
+}
+
+@include navigation($config);

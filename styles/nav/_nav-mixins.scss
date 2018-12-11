@@ -40,3 +40,9 @@
     @content;
   }
 }
+
+@mixin contest-name {
+  table:nth-child(5) tbody:nth-child(1) tr:nth-child(2) td.hh > span:nth-child(3) {
+    @content;
+  }
+}
