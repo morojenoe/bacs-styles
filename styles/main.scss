@@ -1,9 +1,8 @@
 @import 'variables';
 @import 'mixins';
-@import 'nav/mixins';
 @import '../node_modules/foundation-sites/scss/foundation.scss';
-@import './nav/styles';
-@import './leaderboard/styles';
+@import './nav/nav-styles';
+@import './leaderboard/leaderboard-styles';
 
 body {
   background: $bg-color-nav;
