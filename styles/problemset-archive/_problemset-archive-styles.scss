@@ -1,0 +1,6 @@
+@import './problemset-archive-mixins';
+@import '../shared/mixins';
+
+@include problem-table {
+  @include bacs-table;
+}
