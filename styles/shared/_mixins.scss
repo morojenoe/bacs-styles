@@ -1,0 +1,25 @@
+@import '../../node_modules/foundation-sites/scss/foundation.scss';
+
+$bacs-table-even-row-color: #fafafa;
+$bacs-table-odd-row-color: white;
+$bacs-table-head-color: darken($bacs-table-even-row-color, 10%);
+@mixin bacs-table(
+  $table-head-color: $bacs-table-head-color,
+  $table-even-row-color: $bacs-table-even-row-color,
+  $table-odd-row-color: $bacs-table-odd-row-color
+) {
+  @include table(none, true);
+  @include shadow;
+
+  tr:nth-child(even) {
+    background-color: $table-even-row-color;
+  }
+
+  tr:nth-child(odd):not(:first-child) {
+    background-color: $table-odd-row-color;
+  }
+
+  tr:first-child {
+    background-color: $table-head-color;
+  }
+}

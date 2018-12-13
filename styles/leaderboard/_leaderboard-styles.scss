@@ -1,20 +1,6 @@
 @import 'leaderboard-mixins';
-@import 'leaderboard-variables';
+@import '../shared/mixins';
 
 @include leaderboard {
-  // border: none;
-  @include table(none, true);
-  @include shadow;
-
-  tr:nth-child(even) {
-    background-color: $table-even-row-color;
-  }
-
-  tr:nth-child(odd):not(:first-child) {
-    background-color: $table-odd-row-color;
-  }
-
-  tr:first-child {
-    background-color: $table-head-color;
-  }
+  @include bacs-table;
 }
