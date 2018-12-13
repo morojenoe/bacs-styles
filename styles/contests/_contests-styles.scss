@@ -1,0 +1,8 @@
+@import '../shared/mixins';
+@import './contests-mixins';
+
+@include contests-table {
+  @include bacs-table;
+  border-style: none;
+  border-width: 0px;
+}

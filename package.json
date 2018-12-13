@@ -23,7 +23,6 @@
     "@material/typography": "^0.42.0",
     "bourbon": "^5.1.0",
     "foundation-sites": "^6.5.1",
-    "muicss": "^0.9.41",
     "normalize.css": "^8.0.1",
     "sass": "^1.15.2"
   },

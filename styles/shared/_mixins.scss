@@ -13,10 +13,16 @@ $bacs-table-head-color: darken($bacs-table-even-row-color, 10%);
 
   tr:nth-child(even) {
     background-color: $table-even-row-color;
+    &:hover {
+      background-color: darken($table-even-row-color, 10%);
+    }
   }
 
   tr:nth-child(odd):not(:first-child) {
     background-color: $table-odd-row-color;
+    &:hover {
+      background-color: darken($table-odd-row-color, 10%);
+    }
   }
 
   tr:first-child {

@@ -1,10 +1,13 @@
+@import '../node_modules/foundation-sites/scss/foundation.scss';
+@import '../node_modules/@angular/material/theming';
+
 @import 'variables';
 @import 'mixins';
-@import '../node_modules/foundation-sites/scss/foundation.scss';
+
 @import './nav/nav-styles';
 @import './leaderboard/leaderboard-styles';
 @import './problemset-archive/problemset-archive-styles';
-@import '../node_modules/@angular/material/theming';
+@import './contests/contests-styles';
 
 $config: mat-typography-config();
 
@@ -34,6 +37,10 @@ table {
 @include content-title {
   background-color: color-luminance($bg-color-nav);
   border: none;
+}
+
+@include contest-group-stats {
+  @include bacs-table;
 }
 
 @include navigation($config);
