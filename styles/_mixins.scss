@@ -5,7 +5,7 @@
 }
 
 @mixin post-table {
-  table:nth-child(1) tbody:nth-child(1) tr:nth-child(2) td:nth-child(1) > table:nth-child(2) {
+  table:nth-child(1) tbody:nth-child(1) table:nth-child(2) table:nth-child(1) tr:nth-child(2) td:nth-child(1) > table:nth-child(2) {
     @content;
   }
 }
@@ -28,6 +28,12 @@
 
 @mixin contest-group-stats {
   table:nth-child(1) tbody:nth-child(1) tr:nth-child(1) td:nth-child(1) > table:nth-child(3) {
+    @content;
+  }
+}
+
+@mixin welcome-title {
+  tbody:nth-child(1) tr:nth-child(2) td:nth-child(1) div:nth-child(1) > b:nth-child(1) {
     @content;
   }
 }

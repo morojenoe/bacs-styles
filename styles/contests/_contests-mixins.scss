@@ -2,5 +2,10 @@
   tbody:nth-child(1) tr:nth-child(1) td:nth-child(1) center:nth-child(1) > table.yo:nth-child(2),
   table:nth-child(1) tbody:nth-child(1) tr:nth-child(1) td:nth-child(1) > table.yo {
     @content;
+
+    border: none;
+    td {
+      border: solid 1px lightblue;
+    }
   }
 }

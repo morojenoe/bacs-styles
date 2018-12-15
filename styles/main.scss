@@ -22,9 +22,11 @@ table {
 }
 
 @include post {
+  @include table(none, true);
   @include shadow;
   background: none !important;
   border: none !important;
+  padding: 25px;
 }
 
 @include post-table {
@@ -36,12 +38,18 @@ table {
 }
 
 @include content-title {
-  background-color: color-luminance($bg-color-nav);
+  @include shadow;
+  background-color: white;
   border: none;
+  padding: 10px;
 }
 
 @include contest-group-stats {
   @include bacs-table;
+}
+
+@include welcome-title {
+  display: none;
 }
 
 @include navigation($config);
