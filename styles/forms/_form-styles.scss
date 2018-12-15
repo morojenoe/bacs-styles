@@ -1,0 +1,12 @@
+@include foundation-form-text;
+@include foundation-form-select;
+
+input[type="submit"], input[type="button"] {
+  @include button;
+}
+
+#login::placeholder {
+  &::before {
+    content: 'login';
+  }
+}

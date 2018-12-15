@@ -1,4 +1,5 @@
 @import 'nav-mixins';
+@import '../../node_modules/foundation-sites/scss/foundation.scss';
 
 @mixin navigation($config) {
   @include nav-container {
@@ -16,7 +17,7 @@
     text-align: left;
     padding: 10px;
     font-size: mat-font-size($config, body-2);
-    @include separator();
+    @include separator;
   }
 
   @include nav-elem-link {
