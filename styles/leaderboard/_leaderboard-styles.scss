@@ -1,5 +1,4 @@
 @import 'leaderboard-mixins';
-@import '../shared/mixins';
 
 @include leaderboard {
   @include bacs-table;

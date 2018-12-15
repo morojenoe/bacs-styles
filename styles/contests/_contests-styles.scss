@@ -1,5 +1,4 @@
-@import '../shared/mixins';
-@import './contests-mixins';
+@import 'contests-mixins';
 
 @include contests-table {
   @include bacs-table;
