@@ -1,7 +1,7 @@
 @include foundation-form-text;
 @include foundation-form-select;
 
-input[type="submit"], input[type="button"] {
+button[class="btn"], input[type="submit"], input[type="button"] {
   @include button;
 }
 
