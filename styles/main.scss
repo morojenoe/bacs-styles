@@ -52,4 +52,5 @@ table {
   display: none;
 }
 
+@include problemset-archive($config);
 @include navigation($config);

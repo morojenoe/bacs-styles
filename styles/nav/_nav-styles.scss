@@ -2,7 +2,6 @@
 
 @mixin navigation($config) {
   @include nav-container {
-    
   }
 
   @include nav-icons {

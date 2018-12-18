@@ -1,5 +1,55 @@
 @import 'problemset-archive-mixins';
 
-@include problem-table {
-  @include bacs-table;
+@mixin text-body-1($config) {
+  font-size: mat-font-size($config, body-1);
+}
+
+@mixin problemset-archive($config) {
+  @include problem-table {
+    @include bacs-table;
+  }
+  
+  @include show-problems-from-to-row {
+    &>td:nth-child(1) > b {
+      @include text-body-1($config);
+      margin-right: 15px;
+      vertical-align: baseline;
+    }
+
+    &>td:nth-child(2) {
+      display: flex;
+      &>b {
+        display: flex;
+        align-items: baseline;
+    
+        input:nth-child(1) {
+          margin-right: 10px;
+        }
+    
+        input:nth-child(2) {
+          margin-left: 10px;
+        }
+      }
+    
+      button {
+        margin-left: 25px;
+      }
+    }
+  }
+  
+  @include lookup-problems-row {
+    &>td:nth-child(1) {
+      vertical-align: baseline;
+      &>b {
+        @include text-body-1($config);
+      }
+    }
+
+    &>td:nth-child(2) {
+      display: flex;
+      input:nth-child(1) {
+        margin-right: 30px;
+      }
+    }
+  }  
 }
