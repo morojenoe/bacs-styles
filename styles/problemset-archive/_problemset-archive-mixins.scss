@@ -5,13 +5,13 @@
 }
 
 @mixin show-problems-from-to-row {
-  td:nth-child(1) table:nth-child(2) tbody:nth-child(1) tr:nth-child(1) {
+  table table table table td:nth-child(1) table:nth-child(2):not(.yo) tbody:nth-child(1) tr:nth-child(1) {
     @content;
   }
 }
 
 @mixin lookup-problems-row {
-  td:nth-child(1) table:nth-child(2) tbody:nth-child(1) tr:nth-child(2) {
+  table table table table td:nth-child(1) table:nth-child(2):not(.yo) tbody:nth-child(1) tr:nth-child(2) {
     @content;
   }
 }

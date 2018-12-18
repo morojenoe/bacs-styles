@@ -10,10 +10,12 @@
   }
   
   @include show-problems-from-to-row {
-    &>td:nth-child(1) > b {
-      @include text-body-1($config);
-      margin-right: 15px;
+    &>td:nth-child(1) {
       vertical-align: baseline;
+      &>b {
+        @include text-body-1($config);
+        margin-right: 15px;
+      }
     }
 
     &>td:nth-child(2) {
@@ -21,6 +23,7 @@
       &>b {
         display: flex;
         align-items: baseline;
+        @include text-body-1($config);
     
         input:nth-child(1) {
           margin-right: 10px;
