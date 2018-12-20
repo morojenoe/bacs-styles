@@ -55,3 +55,4 @@ table {
 
 @include problemset-archive($config);
 @include navigation($config);
+@include virtual-contest($config);

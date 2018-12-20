@@ -1,0 +1,9 @@
+@import 'virtual-contest-mixins';
+
+@mixin virtual-contest($config) {
+  @include virtual-contest-form {
+    @include shadow;
+    padding: 25px 25px 10px 25px;
+    font-size: mat-font-size($config, body-1);
+  }
+}
