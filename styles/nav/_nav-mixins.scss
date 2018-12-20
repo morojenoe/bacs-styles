@@ -17,7 +17,7 @@
 }
 
 @mixin nav-elem() {
-  td:nth-child(1) table:nth-child(5) tbody:nth-child(1) tr > td:not(.hh) {
+  table table td:nth-child(1) table:nth-child(5) tbody:nth-child(1) tr > td:only-child:not(.hh):not([width="50%"]):not([colspan="2"]) {
     @content;
   }  
 }
