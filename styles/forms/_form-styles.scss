@@ -5,6 +5,34 @@ button[class="btn"], input[type="submit"], input[type="button"] {
   @include button;
 }
 
+@mixin login-username {
+  form:nth-child(2) table:nth-child(1) tbody:nth-child(1) tr:nth-child(1) > td:nth-child(1) {
+    @content;
+  }
+}
+
+@mixin login-password {
+  form:nth-child(2) table:nth-child(1) tbody:nth-child(1) tr:nth-child(2) > td:nth-child(1) {
+    @content;
+  }
+}
+
+@mixin login-form-labels {
+  position: relative;
+  b {
+    position: absolute;
+    top: 15px;
+  }
+}
+
+@include login-username {
+  @include login-form-labels;
+}
+
+@include login-password {
+  @include login-form-labels;
+}
+
 #login::placeholder {
   &::before {
     content: 'login';

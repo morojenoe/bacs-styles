@@ -1,0 +1,5 @@
+@import 'clarification-mixins';
+
+@include clarification-tables {
+  @include bacs-table;
+}

@@ -1,0 +1,5 @@
+@import 'status-mixins';
+
+@include status {
+  @include bacs-table;
+}

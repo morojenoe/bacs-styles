@@ -6,10 +6,11 @@
 @import 'mixins';
 
 @import './nav/nav-styles';
-@import './leaderboard/leaderboard-styles';
 @import './problemset-archive/problemset-archive-styles';
 @import './contests/contests-styles';
 @import './forms/form-styles';
+@import './status/status-styles';
+@import './contest-menu/contest-menu-styles';
 
 $config: mat-typography-config();
 

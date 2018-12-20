@@ -1,0 +1,6 @@
+@mixin clarification-tables {
+  tbody:nth-child(1) tr:nth-child(2) td:nth-child(1) center:nth-child(3) > table:nth-child(3),
+  tbody:nth-child(1) tr:nth-child(2) td:nth-child(1) center:nth-child(3) > table:nth-child(8) {
+    @content;
+  }
+}
