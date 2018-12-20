@@ -53,6 +53,10 @@ table {
   display: none;
 }
 
+@include main-content {
+  padding: 0 10px;
+}
+
 @include problemset-archive($config);
 @include navigation($config);
 @include virtual-contest($config);

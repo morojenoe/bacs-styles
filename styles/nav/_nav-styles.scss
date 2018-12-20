@@ -2,6 +2,7 @@
 
 @mixin navigation($config) {
   @include nav-container {
+    border-right: 1px solid $separator-color;
   }
 
   @include nav-icons {
@@ -23,6 +24,9 @@
     @include button-style($bg-color-nav, auto, auto);
     padding: 10px 0 10px 0px;
     text-decoration: none;
+    /*&::before {
+      @include css-triangle(5px, gray, right);
+    }*/
   }
 
   @include nav-elem {
