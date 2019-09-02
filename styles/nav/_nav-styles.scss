@@ -19,15 +19,16 @@
     @include separator;
   }
 
-  @include nav-elem-link {
+  @include nav-link {
     @include button-expand(true);
     @include button-style($bg-color-nav, auto, auto);
-    padding: 10px 0 10px 0px;
+    padding: 10px 0 10px 10px;
     text-decoration: none;
-    /*&::before {
-      @include css-triangle(5px, gray, right);
-    }*/
   }
+
+  @include nav-elem-link {
+    border-left: solid 5px black;
+  }  
 
   @include nav-elem {
     display: flex;

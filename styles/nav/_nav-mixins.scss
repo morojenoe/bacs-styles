@@ -23,11 +23,16 @@
 }
 
 @mixin nav-elem-link() {
-  td:nth-child(1) table:nth-child(5) tbody:nth-child(1) tr > td:not(.hh) > a {
+  td:nth-child(1) table:nth-child(5) tbody:nth-child(1) tr > td:not(.hh) img + a {
     @content;
   }  
 }
 
+@mixin nav-link() {
+  td:nth-child(1) table:nth-child(5) tbody:nth-child(1) tr > td:not(.hh) > a {
+    @content;
+  }  
+}
 
 @mixin nav-icons {
   table:nth-child(5) tbody:nth-child(1) tr td:nth-child(1) > img:not([src="/static/img/bacs2.gif"]) {
