@@ -29,7 +29,7 @@
 }
 
 @mixin nav-link() {
-  td:nth-child(1) table:nth-child(5) tbody:nth-child(1) tr > td:not(.hh) > a {
+  td:nth-child(1) table:nth-child(5) tbody:nth-child(1) tr > td:not(.hh) > a:not([href^="user_info"]) {
     @content;
   }  
 }

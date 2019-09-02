@@ -30,9 +30,9 @@ table {
   padding: 25px;
 }
 
-@include post-table {
-  @include table(none, true);
-}
+// @include post-table {
+//   @include table(none, true);
+// }
 
 @include contest-problems {
   @include bacs-table;
