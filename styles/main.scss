@@ -30,10 +30,6 @@ table {
   padding: 25px;
 }
 
-// @include post-table {
-//   @include table(none, true);
-// }
-
 @include contest-problems {
   @include bacs-table;
 }
@@ -43,6 +39,21 @@ table {
   background-color: white;
   border: none;
   padding: 10px;
+}
+
+@include pagination-link {
+  @include pagination-item-current;
+  color: inherit;
+  background: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    background: transparentize(#000000, 0.9);
+  }
+}
+
+@include pagination-current-link {
+  @include pagination-item-current;
 }
 
 @include contest-group-stats {

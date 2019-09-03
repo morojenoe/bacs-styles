@@ -43,3 +43,15 @@
     @content;
   }
 }
+
+@mixin pagination-link {
+  a[href^="index.php?page="] {
+    @content;
+  }
+}
+
+@mixin pagination-current-link {
+  tbody:nth-child(1) tr:nth-child(4) td:nth-child(1) big:nth-child(1) > b {
+    @content;
+  }
+}

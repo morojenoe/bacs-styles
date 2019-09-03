@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "build:scss": "./node_modules/.bin/sass ./styles/main.scss:./dist/main.css"
+    "build:scss": "./node_modules/.bin/sass ./styles/main.scss:./dist/main.css",
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,12 @@
     "sass": "^1.15.2"
   },
   "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
     "node-sass": "^4.10.0",
     "sass-loader": "^7.1.0",
     "webpack": "^4.27.1",
